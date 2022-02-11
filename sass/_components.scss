@@ -1,19 +1,77 @@
 /*----------------------------
       layout
  ----------------------------*/
-  body {
-    min-height: 100vh;
-  }
-  
-  
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
 /*----------------------------
-      ??? section
+      header (hero) section
 ----------------------------*/
-  
-  
-  
+.hero {
+  &__image img {
+    width: 100%;
+  }
+
+  &__heading {
+    font-family: Big Shoulders Display;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 55px;
+    color: $black;
+    text-transform: uppercase;
+    margin: 32px 0;
+  }
+
+  &__heading span {
+    display: block;
+  }
+
+  &__info-container {
+    margin: 0 16px;
+  }
+
+  &__paragraph {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0px;
+  }
+
+  &__button {
+    display: flex;
+    width: 260px;
+    height: 72px;
+    text-decoration: none;
+    margin: 32px 0 120px;
+  }
+
+  &__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    flex-basis: 204px;
+    font-family: Big Shoulders Display;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 3.6363637447357178px;
+    // text-align: left;
+  }
+
+  &__arrow {
+    flex-basis: 54px;
+    background: $gold url(../assets/icon-arrow-right.svg) no-repeat center;
+    // background-size: 8px 24px;
+
+
+  }
+}
+
 /*----------------------------
       footer section 
 ----------------------------*/
-  
-  
