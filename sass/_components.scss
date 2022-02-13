@@ -1,10 +1,9 @@
 /*----------------------------
       layout
  ----------------------------*/
- body {
+body {
   min-height: 100vh;
 }
-
 
 .page-wrapper {
   max-width: 375px;
@@ -33,7 +32,7 @@
     grid-template-columns: 1fr 285px 229px 246px 65px 282px 1fr;
     grid-template-rows: 189px 611px;
   }
-  
+
   @media only screen and (min-width: $desktop) {
     .bg-black {
       background-color: $black;
@@ -113,7 +112,6 @@
     display: block;
   }
 
-
   &__paragraph {
     font-size: 18px;
     font-weight: 300;
@@ -156,6 +154,78 @@
   &__arrow {
     flex-basis: 54px;
     background: $gold url(../assets/icon-arrow-right.svg) no-repeat center;
+  }
+}
+
+/*----------------------------
+      main (gallery) section 
+----------------------------*/
+.gallery {
+  margin: 0 16px;
+
+  &__image-one {
+    background-image: url(../assets/mobile/image-grid-1@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 343px;
+  }
+
+  &__info {
+    margin: 25px 0;
+  }
+  &__heading {
+    font-size: 50px;
+    line-height: 45px;
+    text-transform: uppercase;
+    // margin: 25px 0 21px;
+  }
+
+  &__heading span {
+    display: block;
+  }
+
+  &__paragraph {
+    color: $black;
+  }
+
+  &__image {
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__image--one {
+    background-image: url(../assets/mobile/image-grid-1@2x.jpg);
+    height: 320px;
+  }
+
+  &__image--two {
+    background-image: url(../assets/mobile/image-grid-2@2x.jpg);
+    height: 480px;
+    margin: 32px 0 16px;
+  }
+
+  &__image--three {
+    background-image: url(../assets/mobile/image-grid-3@2x.jpg);
+    height: 200px;
+  }
+
+  &__be-inspired-info {
+    max-width: 343px;
+    height: 247px;
+    background-color: $black;
+    margin: 16px 0 120px;
+    text-align: left;
+    padding: 48px 24px;
+  }
+
+  &__heading--white {
+    color: $white;
+  }
+
+  &__paragraph--gray {
+    color: $white;
+    max-width: 295px;
+    margin: 24px 0 0;
   }
 }
 
