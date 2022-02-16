@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/favicon-32x32.png"
     />
     <title>Frontend Mentor | Art gallery website</title>
 
@@ -25,7 +25,23 @@
     <div class="page-wrapper">
       <header class="hero">
         <div class="bg-black"></div>
-        <div class="hero__image"></div>
+        
+        <!-- <div class="hero__image"></div> -->
+        <picture class="hero__image ">
+          <source
+            media="(min-width: 1440px)"
+            srcset="./assets/desktop/image-hero@2x.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/tablet/image-hero.jpg"
+          />
+          <img
+            src="./assets/mobile/image-hero@2x.jpg"
+            alt=""
+          />
+        </picture>
+
         <div class="hero__info-container">
           <h1 class="hero__heading"><span>Modern</span> Art Gallery</h1>
           <div class="hero__info">
@@ -43,21 +59,64 @@
       </header>
 
       <main class="gallery">
-        <div class="gallery__image gallery__image--one"></div>
+        <picture class="gallery__image gallery__image--one">
+          <source
+            class="gallery__img1-desktop"
+            media="(min-width: 1440px)"
+            srcset="./assets/desktop/image-grid-1@2x.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/tablet/image-grid-1@2x.jpg"
+          />
+          <img  src="./assets/mobile/image-grid-1@2x.jpg" alt="" />
+        </picture>
+
         <div class="gallery__info">
-          <h2 class="gallery__heading"><span>Your Day</span>at the Gallery</h2>
+          <h2 class="gallery__heading gallery__heading--black"><span>Your Day </span>at the Gallery</h2>
+          <!-- <h2 class="gallery__heading">Your Day at the Gallery</h2> -->
           <p class="gallery__paragraph">
             Wander through our distinct collections and find new insights about
             our artists. Dive into the details of their creative process.
           </p>
         </div>
-        <div class="gallery__image gallery__image--two"></div>
-        <div class="gallery__image gallery__image--three"></div>
+
+        <picture class="gallery__image gallery__image--two">
+          <source
+            media="(min-width: 1440px)"
+            srcset="./assets/desktop/image-grid-2@2x.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/tablet/image-grid-2@2x.jpg"
+          />
+          <img
+            src="./assets/mobile/image-grid-2@2x.jpg"
+            alt=""
+          />
+        </picture>
+
+        <picture class="gallery__image gallery__image--three">
+          <source
+            media="(min-width: 1440px)"
+            srcset="./assets/desktop/image-grid-3@2x.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./assets/tablet/image-grid-3@2x.jpg"
+          />
+          <img
+            class="gallery__img3-mobile"
+            src="./assets/mobile/image-grid-3@2x.jpg"
+            alt=""
+          />
+        </picture>
+
         <div class="gallery__be-inspired-info">
           <h2 class="gallery__heading gallery__heading--white">
             Come &amp; be inspired
           </h2>
-          <p class="gallery__paragraph--gray">
+          <p class="gallery__paragraph gallery__paragraph--white">
             We’re excited to welcome you to our gallery and see how our
             collections influence you.
           </p>
