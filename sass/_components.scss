@@ -1,19 +1,19 @@
 /*----------------------------
       layout
  ----------------------------*/
-body {
+ body {
   min-height: 100vh;
 }
 
 .page-wrapper {
-  max-width: 375px;
+  // max-width: 375px;
   margin: 0 auto;
 
   @media only screen and (min-width: $tablet) {
-    max-width: 1050px;
+    // max-width: 1050px;
   }
   @media only screen and (min-width: $desktop) {
-    max-width: 1800px;
+    // max-width: 1800px;
   }
 }
 /*----------------------------
@@ -24,12 +24,14 @@ body {
 
   @media only screen and (min-width: $tablet) {
     display: grid;
-    grid-template-columns: 1fr 48px 1fr;
-    grid-template-rows: 145px 555px;
+    grid-template-columns: 1fr minmax(48px, auto) 1fr;
+    grid-template-rows: minmax(145px, auto) minmax(555px, auto);
   }
 
   @media only screen and (min-width: $desktop) {
+    // grid-template-columns: 1fr minmax(285px,auto) minmax(229px,auto) minmax(246px,auto) minmax(65px,auto) minmax(282px,auto) 1fr;
     grid-template-columns: 1fr 285px 229px 246px 65px 282px 1fr;
+    // grid-template-rows: minmax(189px, auto) minmax(611px, auto);
     grid-template-rows: 189px 611px;
   }
 
@@ -42,23 +44,13 @@ body {
   }
 
   &__image {
-    background-image: url(../assets/mobile/image-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    // background-size: 100% auto;
-    height: 240px;
 
     @media only screen and (min-width: $tablet) {
-      height: 100%;
-      background: url(../assets/tablet/image-hero@2x.jpg);
-      background-size: clamp(437px, 100%, 580px);
-      background-repeat: no-repeat;
       grid-column: 1/3;
       grid-row: 1/-1;
     }
 
     @media only screen and (min-width: $desktop) {
-      background: url(../assets/desktop/image-hero@2x.jpg);
       background-size: 100%;
       grid-column: 3/6;
       grid-row: 1/-1;
@@ -120,6 +112,7 @@ body {
 
     @media only screen and (min-width: $tablet) {
       max-width: 339px;
+      margin: 48px 0;
     }
 
     @media only screen and (min-width: $desktop) {
@@ -163,71 +156,163 @@ body {
 .gallery {
   margin: 0 16px;
 
-  &__image-one {
-    background-image: url(../assets/mobile/image-grid-1@2x.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 343px;
+  @media only screen and (min-width: $tablet) {
+    grid-template-columns: minmax(290px, auto) minmax(118px, auto) minmax(280px,auto);
+    grid-template-rows: minmax(400px, auto) minmax(313px, auto) minmax(396px,auto);
+    display: grid;
+    gap: 11px;
+    margin: 120px 30px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    margin: 180px 165px;
+    gap: 30px;
   }
 
   &__info {
-    margin: 25px 0;
+    margin: 25px 0 32px;
+
+    @media only screen and (min-width: $tablet) {
+      grid-column: 1;
+      grid-row: 1;
+      max-width: 223px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      max-width: 350px;
+    }
   }
+
   &__heading {
     font-size: 50px;
     line-height: 45px;
     text-transform: uppercase;
-    // margin: 25px 0 21px;
+
+    
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 60px;
+      line-height: 60px;
+      max-width: 350px;
+    }
+  }
+
+  &__heading--black {
+    @media only screen and (min-width: $tablet) {
+      // max-width: clamp(223px, 29.036vw, 350px );
+      // max-width: 223px;
+      margin: 24px 0;
+      font-size: clamp(50px, 6.51vw, 60px);
+      line-height: clamp(45px, 5.859vw, 60px);
+
+    }
   }
 
   &__heading span {
     display: block;
+
+    @media only screen and (min-width: $desktop) {
+      display: unset;
+    }
   }
 
   &__paragraph {
     color: $black;
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 22px;
+      line-height: 32px;
+    }
   }
 
-  &__image {
-    background-position: center;
-    background-size: cover;
-  }
 
   &__image--one {
-    background-image: url(../assets/mobile/image-grid-1@2x.jpg);
-    height: 320px;
+    @media only screen and (min-width: $tablet) {
+      grid-column: 2/-1;
+    }
+  }
+
+  // @media only screen and (min-width: $tablet) {
+  //   picture:nth-child(1) {
+  //     // margin-left:clamp(0px, 7.854vw, 125px);
+  //   }
+  // }
+
+  @media only screen and (min-width: $desktop) {
+    picture:nth-child(1) {
+      margin-left: 125px;
+    }
   }
 
   &__image--two {
-    background-image: url(../assets/mobile/image-grid-2@2x.jpg);
-    height: 480px;
+    height: 100%;
     margin: 32px 0 16px;
+
+    @media only screen and (min-width: $tablet) {
+      grid-column: 1/3;
+      grid-row: 2/4;
+      margin: 0;
+    }
   }
 
   &__image--three {
-    background-image: url(../assets/mobile/image-grid-3@2x.jpg);
-    height: 200px;
+
+    @media only screen and (min-width: $tablet) {
+      grid-column: 3;
+      grid-row: 2;
+    }
+  }
+
+  &__img3-mobile {
+    margin: 16px 0 0;
+
+    @media only screen and (min-width: $tablet) {
+      margin: 0;
+    }
   }
 
   &__be-inspired-info {
-    max-width: 343px;
     height: 247px;
     background-color: $black;
     margin: 16px 0 120px;
     text-align: left;
     padding: 48px 24px;
+
+    @media only screen and (min-width: $tablet) {
+      grid-column: 3;
+      grid-row: 3;
+      margin: 0 auto;
+      height: auto;
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+    }
   }
 
   &__heading--white {
     color: $white;
+    max-width: 223px;
+
+    @media only screen and (min-width: $desktop) {
+      max-width: 350px;
+    }
   }
 
-  &__paragraph--gray {
+  &__paragraph--white {
     color: $white;
-    max-width: 295px;
     margin: 24px 0 0;
+    max-width: 223px;
+
+    @media only screen and (min-width: $desktop) {
+      max-width: 350px;
+    }
   }
 }
+
 
 /*----------------------------
       footer section 
