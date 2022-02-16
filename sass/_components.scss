@@ -188,8 +188,6 @@
     line-height: 45px;
     text-transform: uppercase;
 
-    
-
     @media only screen and (min-width: $desktop) {
       font-size: 60px;
       line-height: 60px;
@@ -204,7 +202,6 @@
       margin: 24px 0;
       font-size: clamp(50px, 6.51vw, 60px);
       line-height: clamp(45px, 5.859vw, 60px);
-
     }
   }
 
@@ -224,7 +221,6 @@
       line-height: 32px;
     }
   }
-
 
   &__image--one {
     @media only screen and (min-width: $tablet) {
@@ -256,7 +252,6 @@
   }
 
   &__image--three {
-
     @media only screen and (min-width: $tablet) {
       grid-column: 3;
       grid-row: 2;
@@ -313,7 +308,83 @@
   }
 }
 
-
 /*----------------------------
       footer section 
 ----------------------------*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $black;
+  padding: 48px 32px;
+
+  @media only screen and (min-width: $tablet) {
+    flex-direction: row;
+    padding: 56px 40px;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    padding: 80px 165px;
+  }
+
+  &__heading {
+    font-size: 20px;
+    line-height: 20px;
+    color: $white;
+    text-transform: uppercase;
+
+    @media only screen and (min-width: $tablet) {
+      flex: 1 1 175px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      flex: 1 1 300px;
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    color: $white;
+    max-width: 311px;
+    margin: 38px 0;
+
+    @media only screen and (min-width: $tablet) {
+      flex: 1 1 281px;
+      max-width: 281px;
+      margin: 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      flex: 1 1 430px;
+      max-width: 430px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  &__social-media {
+    display: flex;
+    gap: 20px;
+
+    @media only screen and (min-width: $tablet) {
+      flex: 1 1 233px;
+      align-items: baseline;
+      justify-content: flex-end;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      flex: 1 1 380px;
+      align-items: baseline;
+      justify-content: flex-end;
+    }
+  }
+}
