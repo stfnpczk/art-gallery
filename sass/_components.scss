@@ -130,7 +130,7 @@
     margin: 32px 0 120px;
   }
 
-  &__location {
+  &__locale {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,7 +158,7 @@
 
   @media only screen and (min-width: $tablet) {
     grid-template-columns: minmax(290px, auto) minmax(118px, auto) minmax(280px,auto);
-    grid-template-rows: minmax(400px, auto) minmax(313px, auto) minmax(396px,auto);
+    grid-template-rows: minmax(400px, auto) minmax(313px, auto) minmax(398px,auto);
     display: grid;
     gap: 11px;
     margin: 120px 30px;
