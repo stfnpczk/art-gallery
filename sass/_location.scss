@@ -1,138 +1,137 @@
 .location {
-    &__image-map {
-      background-image: url(../assets/mobile/image-map@2x.png);
-      background-repeat: no-repeat;
-      // background-size: 100%;
-      background-size: cover;
-      min-height: 146.667vw;
-      // height: 550px;
-  
+  &__image-map {
+    background-image: url(../assets/mobile/image-map@2x.png);
+    background-repeat: no-repeat;
+    // background-size: 100%;
+    background-size: cover;
+    min-height: 146.667vw;
+    // height: 550px;
+
+    @media only screen and (min-width: $tablet) {
+      background-image: url(../assets/tablet/image-map@2x.png);
+      min-height: 78.125vw;
+    //   height: 600px;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      background-image: url(../assets/desktop/image-map@2x.png);
+      min-height: 41.667vw;
+    }
+  }
+
+  &__button {
+      margin: 0;
+      
       @media only screen and (min-width: $tablet) {
-        background-image: url(../assets/tablet/image-map@2x.png);
-        min-height: 78.125vw;
-      //   height: 600px;
-      }
-  
-      @media only screen and (min-width: $desktop) {
-        background-image: url(../assets/desktop/image-map@2x.png);
-        min-height: 41.667vw;
-      }
+        margin: 0 0 0 39px;
+
     }
-  
-    &__button {
-        margin: 0;
-        
-        @media only screen and (min-width: $tablet) {
-          margin: 0 0 0 39px;
-  
-      }
-      @media only screen and (min-width: $desktop) {
-        margin: 0 0 0 156px;
-      }
+    @media only screen and (min-width: $desktop) {
+      margin: 0 0 0 156px;
     }
-  
-    &__arrow--left {
-      background: $gold url(../assets/icon-arrow-left.svg) no-repeat center;
+  }
+
+  &__arrow--left {
+    background: $gold url(../assets/icon-arrow-left.svg) no-repeat center;
+  }
+
+  &__container {
+    padding: 48px 16px;
+    background-color: $black;
+    // color: $white;
+    // margin: 48px 16px;
+
+    @media only screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: space-between;
+      padding: 88px 40px 80px;
+      //   padding: 11.458vw 5.208vw 10.417vw;
+      gap: 68px;
     }
-  
-    &__container {
-      padding: 48px 16px;
-      background-color: $black;
-      // color: $white;
-      // margin: 48px 16px;
-  
-      @media only screen and (min-width: $tablet) {
-        display: flex;
-        justify-content: space-between;
-        padding: 88px 40px 80px;
-        //   padding: 11.458vw 5.208vw 10.417vw;
-        gap: 68px;
-      }
-  
-      @media only screen and (min-width: $desktop) {
-        //   display: flex;
-        //   justify-content: space-between;
-        padding: 104px 165px 128px;
-        // padding: 11.458vw 5.208vw 10.417vw;
-        gap: 220px;
-      }
+
+    @media only screen and (min-width: $desktop) {
+      //   display: flex;
+      //   justify-content: space-between;
+      padding: 104px 165px 128px;
+      // padding: 11.458vw 5.208vw 10.417vw;
+      gap: 220px;
     }
-  
-    &__heading {
-      font-size: 50px;
-      line-height: 45px;
-      color: $white;
-      // text-align: left;
-  
-      @media only screen and (min-width: $tablet) {
-        //   font-size: 7.161vw;
-        //   line-height:6.510vw ;
-        font-size: 55px;
-        line-height: 50px;
-      }
-  
-      @media only screen and (min-width: $desktop) {
-        //   font-size: 7.161vw;
-        //   line-height:6.510vw ;
-        font-size: 70px;
-        line-height: 70px;
-        max-width: 329px;
-      }
+  }
+
+  &__heading {
+    font-size: 50px;
+    line-height: 45px;
+    color: $white;
+    // text-align: left;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 55px;
+      line-height: 50px;
     }
-  
-    &__directions {
-      margin: 48px 0;
-      color: $white;
-  
-      @media only screen and (min-width: $tablet) {
-        margin: 0;
-      }
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 70px;
+      line-height: 70px;
+      max-width: 329px;
     }
-  
-    &__subheading {
-      font-size: 32px;
+  }
+
+  &__directions {
+    margin: 48px 0;
+    color: $white;
+
+    @media only screen and (min-width: $tablet) {
+      margin: 0;
+    }
+  }
+
+  &__subheading {
+    font-size: 32px;
+    line-height: 32px;
+    color: $gold;
+    // text-align: left;
+
+    @media only screen and (min-width: 1440px) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  &__address {
+    margin: 20px 0;
+
+    @media only screen and (min-width: $desktop) {
+      font-size: 22px;
       line-height: 32px;
-      color: $gold;
-      // text-align: left;
-  
-      @media only screen and (min-width: 1440px) {
-        font-size: 36px;
-        line-height: 36px;
-      }
-    }
-  
-    &__address {
-      margin: 20px 0;
-      //   color: $white;
-  
-      @media only screen and (min-width: $desktop) {
-        //styleName: Body (M);
-        font-size: 22px;
-        line-height: 32px;
-      }
-    }
-  
-    &__paragraph {
-      @media only screen and (min-width: $tablet) {
-        max-width: 398px;
-      }
-      @media only screen and (min-width: $desktop) {
-        max-width: 540px;
-      }
     }
   }
-  
-  .location-footer {
-    background-color: $gold;
+
+  &__paragraph {
+    @media only screen and (min-width: $tablet) {
+      max-width: 398px;
+    }
+    @media only screen and (min-width: $desktop) {
+      max-width: 540px;
+    }
+  }
+}
+
+.location-footer {
+  background-color: $gold;
+  color: $black;
+
+  &__heading,
+  &__paragraph {
     color: $black;
-  
-    &__heading,
-    &__paragraph {
-      color: $black;
-    }
-  
-    &__icon {
-      fill: $black;
-    }
+  }
+
+  &__icon {
+    fill: $black;
   }
   
+  a:hover &__icon {
+    fill: $white;
+    transition: 0.3s ease-in;
+  }
+
+}
