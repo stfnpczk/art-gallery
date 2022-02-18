@@ -29,9 +29,7 @@
   }
 
   @media only screen and (min-width: $desktop) {
-    // grid-template-columns: 1fr minmax(285px,auto) minmax(229px,auto) minmax(246px,auto) minmax(65px,auto) minmax(282px,auto) 1fr;
     grid-template-columns: 1fr 285px 229px 246px 65px 282px 1fr;
-    // grid-template-rows: minmax(189px, auto) minmax(611px, auto);
     grid-template-rows: 189px 611px;
   }
 
@@ -157,6 +155,7 @@
     font-weight: 800;
     line-height: 24px;
     letter-spacing: 3.6363637447357178px;
+    text-transform: uppercase;
   }
 
   &__arrow {
@@ -172,18 +171,21 @@
   margin: 0 16px;
 
   @media only screen and (min-width: $tablet) {
-    grid-template-columns: minmax(290px, auto) minmax(118px, auto) minmax(280px,auto);
-    grid-template-rows: minmax(400px, auto) minmax(313px, auto) minmax(398px,auto);
     display: grid;
-    gap: 11px;
-    margin: 120px 30px;
+    grid-template-columns: 36.458vw 13.932vw 36.328vw;
+    grid-template-rows: 52.083vw 40.755vw 51.563vw ;
+    gap: 1.432vw;
+    margin: 15.625vw 5.208vw 15.625vw;
   }
 
   @media only screen and (min-width: $desktop) {
-    margin: 180px 165px;
-    gap: 30px;
-    grid-template-columns: minmax(290px, auto) minmax(118px, auto) minmax(280px, auto);
-    grid-template-rows: minmax(384px, auto) minmax(307px, auto) minmax(398px, auto);
+    margin: 12.500vw 11.458vw;
+    gap: 2.083vw;
+    
+    grid-template-columns: 30.903vw 11.111vw 30.903vw;
+    grid-template-rows: 27.778vw 21.736vw 26.181vw;
+
+
   }
 
   &__info {
@@ -192,17 +194,17 @@
     @media only screen and (min-width: $tablet) {
       grid-column: 1;
       grid-row: 1;
-      max-width: 223px;
+      max-width: 29.036vw;
     }
 
     @media only screen and (min-width: $desktop) {
-      max-width: 350px;
+      max-width: 26.042vw;
     }
   }
 
   &__heading {
-    font-size: 50px;
-    line-height: 45px;
+    font-size: 6.51vw;
+    line-height: 5.859vw;
     text-transform: uppercase;
 
     @media only screen and (min-width: $desktop) {
@@ -214,15 +216,18 @@
 
   &__heading--black {
     @media only screen and (min-width: $tablet) {
-      // max-width: clamp(223px, 29.036vw, 350px );
+      max-width: clamp(223px, 29.036vw, 350px );
       // max-width: 223px;
-      margin: 24px 0;
-      font-size: clamp(50px, 6.51vw, 60px);
-      line-height: clamp(45px, 5.859vw, 60px);
+      margin: 3.125vw 0;
+      // font-size: clamp(50px, 6.51vw, 60px);
+      font-size: 6.51vw;
+      line-height: 5.859vw;
     }
 
     @media only screen and (min-width: $desktop) {
-      margin:34px 0 32px;
+      font-size: 4.167vw;
+      line-height: 4.167vw;
+      margin:34px 0 32.003px;
     }
   }
 
@@ -238,8 +243,10 @@
     color: $black;
 
     @media only screen and (min-width: $desktop) {
-      font-size: 22px;
-      line-height: 32px;
+      // font-size: 22px;
+      // line-height: 32px;
+      font-size: 1.528vw;
+      line-height: 2.222vw;
     }
   }
 
@@ -249,20 +256,9 @@
     }
   }
 
-  // @media only screen and (min-width: $tablet) {
-  //   picture:nth-child(1) {
-  //     // margin-left:clamp(0px, 7.854vw, 125px);
-  //   }
-  // }
-
-  @media only screen and (min-width: $desktop) {
-    picture:nth-child(1) {
-      margin-left: 125px;
-    }
-  }
 
   &__image--two {
-    height: 100%;
+    // height: 100%;
     margin: 32px 0 16px;
 
     @media only screen and (min-width: $tablet) {
@@ -314,8 +310,14 @@
     color: $white;
     max-width: 223px;
 
+    @media only screen and (min-width: $tablet) {
+      // max-width: 29.036vw;
+    }
+
     @media only screen and (min-width: $desktop) {
-      max-width: 350px;
+      max-width: 23.681vw;
+      font-size: 4.167vw;
+      line-height: 4.167vw ;
     }
   }
 
@@ -324,8 +326,16 @@
     margin: 24px 0 0;
     max-width: 223px;
 
+    @media only screen and (min-width: $tablet) {
+      max-width: 222.998px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
     @media only screen and (min-width: $desktop) {
-      max-width: 350px;
+      max-width: 23.681vw;
+      font-size: 1.528vw;
+      line-height: 2.222vw;
     }
   }
 }
@@ -342,11 +352,11 @@
 
   @media only screen and (min-width: $tablet) {
     flex-direction: row;
-    padding: 56px 40px;
+    padding: 7.292vw 5.208vw;
   }
 
   @media only screen and (min-width: $desktop) {
-    padding: 80px 165px;
+    padding: 5.556vw 11.458vw;
   }
 
   &__heading {
