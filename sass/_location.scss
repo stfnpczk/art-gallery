@@ -10,7 +10,7 @@
     @media only screen and (min-width: $tablet) {
       background-image: url(../assets/tablet/image-map@2x.png);
       min-height: 78.125vw;
-    //   height: 600px;
+      //   height: 600px;
     }
 
     @media only screen and (min-width: $desktop) {
@@ -20,14 +20,13 @@
   }
 
   &__button {
-      margin: 0;
-      
-      @media only screen and (min-width: $tablet) {
-        margin: 0 0 0 39px;
+    margin: 0;
 
+    @media only screen and (min-width: $tablet) {
+      margin: 0 0 0 5.078vw;
     }
     @media only screen and (min-width: $desktop) {
-      margin: 0 0 0 156px;
+      margin: 0 0 0 10.833vw;
     }
   }
 
@@ -44,17 +43,17 @@
     @media only screen and (min-width: $tablet) {
       display: flex;
       justify-content: space-between;
-      padding: 88px 40px 80px;
+      padding: 11.458vw 5.208vw 10.417vw;
       //   padding: 11.458vw 5.208vw 10.417vw;
-      gap: 68px;
+      gap: 8.854vw;
     }
 
     @media only screen and (min-width: $desktop) {
       //   display: flex;
       //   justify-content: space-between;
-      padding: 104px 165px 128px;
+      padding: 7.222vw 11.458vw 8.889vw;
       // padding: 11.458vw 5.208vw 10.417vw;
-      gap: 220px;
+      gap: 15.278vw;
     }
   }
 
@@ -67,16 +66,16 @@
     @media only screen and (min-width: $tablet) {
       //   font-size: 7.161vw;
       //   line-height:6.510vw ;
-      font-size: 55px;
-      line-height: 50px;
+      font-size: 7.161vw;
+      line-height: 6.51vw;
     }
 
     @media only screen and (min-width: $desktop) {
       //   font-size: 7.161vw;
       //   line-height:6.510vw ;
-      font-size: 70px;
-      line-height: 70px;
-      max-width: 329px;
+      font-size: 4.861vw;
+      line-height: 4.861vw;
+      max-width: 22.847vw;
     }
   }
 
@@ -96,8 +95,8 @@
     // text-align: left;
 
     @media only screen and (min-width: 1440px) {
-      font-size: 36px;
-      line-height: 36px;
+      font-size: 2.5vw;
+      line-height: 2.5vw;
     }
   }
 
@@ -105,17 +104,21 @@
     margin: 20px 0;
 
     @media only screen and (min-width: $desktop) {
-      font-size: 22px;
-      line-height: 32px;
+      font-size: 1.528vw;
+      line-height: 2.222vw;
     }
   }
 
   &__paragraph {
     @media only screen and (min-width: $tablet) {
-      max-width: 398px;
+      max-width: 51.823vw;
+      font-size: 2.344vw;
+      line-height: 3.646vw;
     }
     @media only screen and (min-width: $desktop) {
-      max-width: 540px;
+      font-size: 1.25vw;
+      line-height: 1.944vw;
+      max-width: 37.5vw;
     }
   }
 }
@@ -132,10 +135,9 @@
   &__icon {
     fill: $black;
   }
-  
+
   a:hover &__icon {
     fill: $white;
     transition: 0.3s ease-in;
   }
-
 }

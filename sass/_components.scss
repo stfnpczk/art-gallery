@@ -217,9 +217,7 @@
   &__heading--black {
     @media only screen and (min-width: $tablet) {
       max-width: clamp(223px, 29.036vw, 350px );
-      // max-width: 223px;
       margin: 3.125vw 0;
-      // font-size: clamp(50px, 6.51vw, 60px);
       font-size: 6.51vw;
       line-height: 5.859vw;
     }
@@ -247,6 +245,8 @@
       // line-height: 32px;
       font-size: 1.528vw;
       line-height: 2.222vw;
+      //
+      max-width: 24.306vw;
     }
   }
 
@@ -280,7 +280,6 @@
 
     @media only screen and (min-width: $tablet) {
       margin: 0;
-      // height: 100%;
     }
   }
 
