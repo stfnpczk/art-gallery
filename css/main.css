@@ -523,6 +523,7 @@ body {
   font-weight: 300;
   line-height: 1.75rem;
   letter-spacing: 0rem;
+  color: #444444;
 }
 
 @media only screen and (min-width: 768px) {
@@ -684,7 +685,7 @@ body {
 }
 
 .gallery__paragraph {
-  color: #151515;
+  color: #444444;
 }
 
 @media only screen and (min-width: 1440px) {

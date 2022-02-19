@@ -95,6 +95,7 @@ body {
     font-weight: 300;
     line-height: 1.75rem;
     letter-spacing: 0rem;
+    color: $dark-grey;
 
     @media only screen and (min-width: $tablet) {
       max-width: 21.1875rem;
@@ -220,7 +221,7 @@ body {
   }
 
   &__paragraph {
-    color: $black;
+    color: $dark-grey;
 
     @media only screen and (min-width: $desktop) {
       font-size: 1.528vw;
