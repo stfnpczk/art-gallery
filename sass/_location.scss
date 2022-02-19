@@ -2,15 +2,12 @@
   &__image-map {
     background-image: url(../assets/mobile/image-map@2x.png);
     background-repeat: no-repeat;
-    // background-size: 100%;
     background-size: cover;
     min-height: 146.667vw;
-    // height: 550px;
 
     @media only screen and (min-width: $tablet) {
       background-image: url(../assets/tablet/image-map@2x.png);
       min-height: 78.125vw;
-      //   height: 600px;
     }
 
     @media only screen and (min-width: $desktop) {
@@ -35,44 +32,33 @@
   }
 
   &__container {
-    padding: 48px 16px;
+    padding: 3rem 1rem;
     background-color: $black;
-    // color: $white;
-    // margin: 48px 16px;
 
     @media only screen and (min-width: $tablet) {
       display: flex;
       justify-content: space-between;
       padding: 11.458vw 5.208vw 10.417vw;
-      //   padding: 11.458vw 5.208vw 10.417vw;
       gap: 8.854vw;
     }
 
     @media only screen and (min-width: $desktop) {
-      //   display: flex;
-      //   justify-content: space-between;
       padding: 7.222vw 11.458vw 8.889vw;
-      // padding: 11.458vw 5.208vw 10.417vw;
       gap: 15.278vw;
     }
   }
 
   &__heading {
-    font-size: 50px;
-    line-height: 45px;
+    font-size: 3.125rem;
+    line-height: 2.8125rem;
     color: $white;
-    // text-align: left;
 
     @media only screen and (min-width: $tablet) {
-      //   font-size: 7.161vw;
-      //   line-height:6.510vw ;
       font-size: 7.161vw;
       line-height: 6.51vw;
     }
 
     @media only screen and (min-width: $desktop) {
-      //   font-size: 7.161vw;
-      //   line-height:6.510vw ;
       font-size: 4.861vw;
       line-height: 4.861vw;
       max-width: 22.847vw;
@@ -80,7 +66,7 @@
   }
 
   &__directions {
-    margin: 48px 0;
+    margin: 3rem 0;
     color: $white;
 
     @media only screen and (min-width: $tablet) {
@@ -89,19 +75,18 @@
   }
 
   &__subheading {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 2rem;
+    line-height: 2rem;
     color: $gold;
-    // text-align: left;
 
-    @media only screen and (min-width: 1440px) {
+    @media only screen and (min-width: 90rem) {
       font-size: 2.5vw;
       line-height: 2.5vw;
     }
   }
 
   &__address {
-    margin: 20px 0;
+    margin: 1.25rem 0;
 
     @media only screen and (min-width: $desktop) {
       font-size: 1.528vw;

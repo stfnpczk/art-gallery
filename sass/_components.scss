@@ -1,36 +1,26 @@
 /*----------------------------
       layout
  ----------------------------*/
- body {
+body {
   min-height: 100vh;
 }
 
 .page-wrapper {
-  // max-width: 375px;
   margin: 0 auto;
-
-  @media only screen and (min-width: $tablet) {
-    // max-width: 1050px;
-  }
-  @media only screen and (min-width: $desktop) {
-    // max-width: 1800px;
-  }
 }
 /*----------------------------
       header (hero) section
 ----------------------------*/
 .hero {
-  // display: grid;
-
   @media only screen and (min-width: $tablet) {
     display: grid;
-    grid-template-columns: 1fr minmax(48px, auto) 1fr;
-    grid-template-rows: minmax(145px, auto) minmax(555px, auto);
+    grid-template-columns: 1fr minmax(3rem, auto) 1fr;
+    grid-template-rows: minmax(9.0625rem, auto) minmax(34.6875rem, auto);
   }
 
   @media only screen and (min-width: $desktop) {
-    grid-template-columns: 1fr 285px 229px 246px 65px 282px 1fr;
-    grid-template-rows: 189px 611px;
+    grid-template-columns: 1fr 17.8125rem 14.3125rem 15.375rem 4.0625rem 17.625rem 1fr;
+    grid-template-rows: 11.8125rem 38.1875rem;
   }
 
   @media only screen and (min-width: $desktop) {
@@ -42,7 +32,6 @@
   }
 
   &__image {
-
     @media only screen and (min-width: $tablet) {
       grid-column: 1/3;
       grid-row: 1/-1;
@@ -56,7 +45,7 @@
   }
 
   &__info-container {
-    margin: 0 16px;
+    margin: 0 1rem;
 
     @media only screen and (min-width: $tablet) {
       display: flex;
@@ -70,31 +59,30 @@
       display: flex;
       flex-direction: row;
       grid-column: 2/-1;
-      gap: 311px;
+      gap: 19.4375rem;
     }
   }
 
   &__heading {
     font-family: Big Shoulders Display;
     font-weight: 900;
-    font-size: 60px;
-    line-height: 55px;
+    font-size: 3.75rem;
+    line-height: 3.4375rem;
     color: $black;
     text-transform: uppercase;
-    margin: 32px 0;
+    margin: 2rem 0;
 
     @media only screen and (min-width: $tablet) {
-      font-size: 70px;
-      line-height: 65px;
+      font-size: 4.375rem;
+      line-height: 4.0625rem;
       margin: 0;
     }
 
     @media only screen and (min-width: $desktop) {
-      font-size: 96px;
-      line-height: 88px;
+      font-size: 6rem;
+      line-height: 5.5rem;
       color: $white;
       mix-blend-mode: difference;
-      margin: 0;
     }
   }
 
@@ -103,33 +91,33 @@
   }
 
   &__paragraph {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
-    line-height: 28px;
-    letter-spacing: 0px;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
 
     @media only screen and (min-width: $tablet) {
-      max-width: 339px;
-      margin: 48px 0;
+      max-width: 21.1875rem;
+      margin: 3rem 0;
     }
 
     @media only screen and (min-width: $desktop) {
-      font-size: 22px;
-      line-height: 32px;
-      max-width: 350px;
+      font-size: 1.375rem;
+      line-height: 2rem;
+      max-width: 21.875rem;
       margin: 0;
     }
   }
 
   &__button {
     display: flex;
-    width: 260px;
-    height: 72px;
+    width: 16.25rem;
+    height: 4.5rem;
     text-decoration: none;
-    margin: 32px 0 120px;
+    margin: 2rem 0 7.5rem;
 
     @media only screen and (min-width: $desktop) {
-      margin: 64px 0;
+      margin: 4rem 0;
     }
   }
 
@@ -149,17 +137,17 @@
     align-items: center;
     background-color: black;
     color: white;
-    flex-basis: 204px;
+    flex-basis: 12.75rem;
     font-family: Big Shoulders Display;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
-    line-height: 24px;
-    letter-spacing: 3.6363637447357178px;
+    line-height: 1.5rem;
+    letter-spacing: 0.2273rem;
     text-transform: uppercase;
   }
 
   &__arrow {
-    flex-basis: 54px;
+    flex-basis: 3.375rem;
     background: $gold url(../assets/icon-arrow-right.svg) no-repeat center;
   }
 }
@@ -168,28 +156,26 @@
       main (gallery) section 
 ----------------------------*/
 .gallery {
-  margin: 0 16px;
+  margin: 0 1rem;
 
   @media only screen and (min-width: $tablet) {
     display: grid;
     grid-template-columns: 36.458vw 13.932vw 36.328vw;
-    grid-template-rows: 52.083vw 40.755vw 51.563vw ;
+    grid-template-rows: 52.083vw 40.755vw 51.563vw;
     gap: 1.432vw;
     margin: 15.625vw 5.208vw 15.625vw;
   }
 
   @media only screen and (min-width: $desktop) {
-    margin: 12.500vw 11.458vw;
+    margin: 12.5vw 11.458vw;
     gap: 2.083vw;
-    
+
     grid-template-columns: 30.903vw 11.111vw 30.903vw;
     grid-template-rows: 27.778vw 21.736vw 26.181vw;
-
-
   }
 
   &__info {
-    margin: 25px 0 32px;
+    margin: 1.5625rem 0 2rem;
 
     @media only screen and (min-width: $tablet) {
       grid-column: 1;
@@ -198,25 +184,20 @@
     }
 
     @media only screen and (min-width: $desktop) {
-      max-width: 26.042vw;
+      margin: 1.736vw 0 2.222vw;
     }
   }
 
   &__heading {
-    font-size: 6.51vw;
-    line-height: 5.859vw;
+    font-size: 3.125rem;
+    line-height: 2.8125rem;
     text-transform: uppercase;
-
-    @media only screen and (min-width: $desktop) {
-      font-size: 60px;
-      line-height: 60px;
-      max-width: 350px;
-    }
+    margin: 0 0 1.3125rem;
   }
 
   &__heading--black {
     @media only screen and (min-width: $tablet) {
-      max-width: clamp(223px, 29.036vw, 350px );
+      max-width: clamp(13.9375rem, 29.036vw, 21.875rem);
       margin: 3.125vw 0;
       font-size: 6.51vw;
       line-height: 5.859vw;
@@ -225,7 +206,8 @@
     @media only screen and (min-width: $desktop) {
       font-size: 4.167vw;
       line-height: 4.167vw;
-      margin:34px 0 32.003px;
+      margin: 2.361vw 0 2.222vw;
+      max-width: 24.306vw;
     }
   }
 
@@ -241,8 +223,6 @@
     color: $black;
 
     @media only screen and (min-width: $desktop) {
-      // font-size: 22px;
-      // line-height: 32px;
       font-size: 1.528vw;
       line-height: 2.222vw;
       //
@@ -256,10 +236,8 @@
     }
   }
 
-
   &__image--two {
-    // height: 100%;
-    margin: 32px 0 16px;
+    margin: 2rem 0 1rem;
 
     @media only screen and (min-width: $tablet) {
       grid-column: 1/3;
@@ -276,7 +254,7 @@
   }
 
   &__img3-mobile {
-    margin: 16px 0 0;
+    margin: 1rem 0 0;
 
     @media only screen and (min-width: $tablet) {
       margin: 0;
@@ -284,11 +262,11 @@
   }
 
   &__be-inspired-info {
-    height: 247px;
+    height: 15.4375rem;
     background-color: $black;
-    margin: 16px 0 120px;
+    margin: 1rem 0 7.5rem;
     text-align: left;
-    padding: 48px 24px;
+    padding: 3rem 1.5rem;
 
     @media only screen and (min-width: $tablet) {
       grid-column: 3;
@@ -307,28 +285,28 @@
 
   &__heading--white {
     color: $white;
-    max-width: 223px;
+    max-width: 13.9375rem;
 
     @media only screen and (min-width: $tablet) {
-      // max-width: 29.036vw;
+      max-width: 29.036vw;
     }
 
     @media only screen and (min-width: $desktop) {
       max-width: 23.681vw;
       font-size: 4.167vw;
-      line-height: 4.167vw ;
+      line-height: 4.167vw;
     }
   }
 
   &__paragraph--white {
     color: $white;
-    margin: 24px 0 0;
-    max-width: 223px;
+    margin: 1.5rem 0 0;
+    max-width: 18.4375rem;
 
     @media only screen and (min-width: $tablet) {
-      max-width: 222.998px;
-      font-size: 18px;
-      line-height: 28px;
+      max-width: 29.036vw;
+      font-size: 2.344vw;
+      line-height: 3.646vw;
     }
 
     @media only screen and (min-width: $desktop) {
@@ -347,7 +325,7 @@
   display: flex;
   flex-direction: column;
   background-color: $black;
-  padding: 48px 32px;
+  padding: 3rem 2rem;
 
   @media only screen and (min-width: $tablet) {
     flex-direction: row;
@@ -359,19 +337,19 @@
   }
 
   &__heading {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
     color: $white;
     text-transform: uppercase;
 
     @media only screen and (min-width: $tablet) {
-      flex: 1 1 175px;
+      flex: 1 1 10.9375rem;
     }
 
     @media only screen and (min-width: $desktop) {
-      flex: 1 1 300px;
-      font-size: 33px;
-      line-height: 30px;
+      flex: 1 1 20.833vw;
+      font-size: 2.292vw;
+      line-height: 2.083vw;
     }
 
     span {
@@ -380,40 +358,40 @@
   }
 
   &__paragraph {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 1.625rem;
     text-align: left;
     color: $white;
-    max-width: 311px;
-    margin: 38px 0;
+    max-width: 19.4375rem;
+    margin: 2.375rem 0;
 
     @media only screen and (min-width: $tablet) {
-      flex: 1 1 281px;
-      max-width: 281px;
+      flex: 1 1 17.5625rem;
+      max-width: 17.5625rem;
       margin: 0;
     }
 
     @media only screen and (min-width: $desktop) {
-      flex: 1 1 430px;
-      max-width: 430px;
-      font-size: 18px;
-      line-height: 28px;
+      flex: 1 1 29.861vw;
+      max-width: 29.861vw;
+      font-size: 1.25vw;
+      line-height: 1.944vw;
     }
   }
 
   &__social-media {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 
     @media only screen and (min-width: $tablet) {
-      flex: 1 1 233px;
+      flex: 1 1 14.5625rem;
       align-items: baseline;
       justify-content: flex-end;
     }
 
     @media only screen and (min-width: $desktop) {
-      flex: 1 1 380px;
+      flex: 1 1 26.389vw;
       align-items: baseline;
       justify-content: flex-end;
     }
